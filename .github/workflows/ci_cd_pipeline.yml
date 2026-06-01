@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-
   pull_request:
     branches:
       - main
@@ -30,5 +29,5 @@ jobs:
       - name: Run Tests
         run: pytest tests/ -v
 
-      - name: Deploy (Simulation)
+      - name: Deploy Simulation
         run: echo "Simulated deployment"
